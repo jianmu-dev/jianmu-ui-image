@@ -61,7 +61,7 @@ workflow:
       docker_username: ((dockerhub.Username))
       docker_password: ((dockerhub.Password))
       image_name: jianmu-web
-      image_tag: "1.1"
+      image_tag: "1.2"
   End:
     type: end
     sources:
