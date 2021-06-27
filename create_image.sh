@@ -7,6 +7,8 @@ docker login -u ${JIANMU_DOCKER_USERNAME} -p ${JIANMU_DOCKER_PASSWORD}
 
 set -x
 
+cd ${JIANMU_WORKSPACE}
+
 docker build -f Dockerfile -t ${JIANMU_IMAGE_NAME}:${JIANMU_IMAGE_TAG} ${JIANMU_DOCKER_BUILD_PATH}
 
 if [ "$JIANMU_IMAGE_TAG" != "latest" ];then
