@@ -17,3 +17,5 @@ fi
 
 
 docker push ${JIANMU_IMAGE_NAME}:latest
+
+${JIANMU_CMD_POST}
