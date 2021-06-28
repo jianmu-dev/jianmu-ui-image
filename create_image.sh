@@ -12,9 +12,8 @@ docker build -f Dockerfile -t ${JIANMU_IMAGE_NAME}:${JIANMU_IMAGE_TAG} ${JIANMU_
 if [ "$JIANMU_IMAGE_TAG" != "latest" ];then
 
 docker push ${JIANMU_IMAGE_NAME}:${JIANMU_IMAGE_TAG}
-docker tag ${JIANMU_DOCKER_USERNAME}/${JIANMU_IMAGE_NAME}:${JIANMU_IMAGE_TAG} ${JIANMU_DOCKER_USERNAME}/${JIANMU_IMAGE_NAME}:latest
+docker tag ${JIANMU_IMAGE_NAME}:${JIANMU_IMAGE_TAG} ${JIANMU_IMAGE_NAME}:latest
 fi
-
 
 docker push ${JIANMU_IMAGE_NAME}:latest
 
